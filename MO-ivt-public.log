@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2019.12.26)  31 MAY 2020 17:45
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2019.12.26)  3 JUN 2020 18:08
 entering extended mode
-**./maturitni-otazky-ivt.tex
-(maturitni-otazky-ivt.tex
+**./MO-ivt-public.tex
+(MO-ivt-public.tex
 LaTeX2e <2019-10-01> patch level 3
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -544,9 +544,8 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 \SOUL@ttwidth=\dimen166
 \SOUL@uldp=\dimen167
 \SOUL@ulht=\dimen168
-)
-(maturitni-otazky-ivt.aux)
-\openout1 = `maturitni-otazky-ivt.aux'.
+) (MO-ivt-public.aux)
+\openout1 = `MO-ivt-public.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
 LaTeX Font Info:    ... okay on input line 12.
@@ -640,161 +639,154 @@ LaTeX Info: Redefining \ref on input line 12.
 LaTeX Info: Redefining \pageref on input line 12.
 LaTeX Info: Redefining \nameref on input line 12.
 
-(maturitni-otazky-ivt.out) (maturitni-otazky-ivt.out)
+(MO-ivt-public.out) (MO-ivt-public.out)
 \@outlinefile=\write3
-\openout3 = `maturitni-otazky-ivt.out'.
+\openout3 = `MO-ivt-public.out'.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\se-ascii-print.def"
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-[1
-
-]
-Overfull \hbox (5.544pt too wide) in paragraph at lines 45--46
-[]\TU/lmr/m/n/12 23.05.2020 doprošel jsem ještě fotoaparát a obecně jsem prochá
-zel otázky
- []
-
-[2]
-Overfull \hbox (9.92001pt too wide) in paragraph at lines 57--59
+Overfull \hbox (9.92001pt too wide) in paragraph at lines 33--35
 \TU/lmr/m/n/12 adresář/složka slouží k uspořádání těchto souborů v hierarchální
 m stromě 
  []
 
-[3]
-Overfull \hbox (1.58934pt too wide) in paragraph at lines 83--85
+[1
+
+]
+Overfull \hbox (1.58934pt too wide) in paragraph at lines 59--61
 []\TU/lmr/m/n/12 čísla se můžou jednoduše ukládat po bitech/bytech, protože je 
 to vlastně
  []
 
-[4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 173--178
+[2] [3] [4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 149--154
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--188
+Underfull \hbox (badness 10000) in paragraph at lines 160--164
 
  []
 
-[8] [9] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 230--232
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
 
  []
 
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 219--223
 
-Underfull \hbox (badness 10000) in paragraph at lines 243--247
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 228--231
 
  []
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 252--255
-
- []
-
-[12] [13]
-Overfull \hbox (5.1347pt too wide) in paragraph at lines 285--286
+Overfull \hbox (5.1347pt too wide) in paragraph at lines 261--262
 \TU/lmr/m/n/12 px) nebo HD (1280 $\OMS/cmsy/m/n/12 ^^B$ \TU/lmr/m/n/12 720 px),
  poměr stran 4:3 ->16:9, spotřeb (32Watt),
  []
 
-[14]
-Overfull \hbox (13.09856pt too wide) in paragraph at lines 307--311
+[12] [13]
+Overfull \hbox (13.09856pt too wide) in paragraph at lines 283--287
 \TU/lmr/m/n/12 zykem (deterministický), grafické znázornění: Rozhodovací tabulk
 a, struk-
  []
 
 
-Overfull \hbox (1.02933pt too wide) in paragraph at lines 315--317
+Overfull \hbox (1.02933pt too wide) in paragraph at lines 291--293
 []\TU/lmr/m/n/12 Kořeny kvadratické rovnice - vypočti determinant, porovnej je-
 li kladný,
  []
 
-[15] [16]
-Overfull \hbox (15.44672pt too wide) in paragraph at lines 346--347
+[14]
+Overfull \hbox (15.44672pt too wide) in paragraph at lines 322--323
 []\TU/lmr/m/n/12 Python IDLE (ntegrated DeveLopment Environment) vs Pycharm (dl
 ouho
  []
 
-[17]
-Overfull \hbox (3.78403pt too wide) in paragraph at lines 364--367
+[15]
+Overfull \hbox (3.78403pt too wide) in paragraph at lines 340--343
 []\TU/lmr/m/it/12 Událostmi řízené programování (Event-driven programming) \TU/
 lmr/m/n/12 je typ asyn-
  []
 
-[18] [19]
-Overfull \hbox (40.16922pt too wide) in paragraph at lines 402--404
+[16] [17]
+Overfull \hbox (40.16922pt too wide) in paragraph at lines 378--380
 \TU/lmr/m/it/12 IP \TU/lmr/m/n/12 (?Internet protokol?) jednoznačně určuje zaří
 zení v síti IPv4 256.256.256.256
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 414--416
+[18] [19]
+Underfull \hbox (badness 10000) in paragraph at lines 390--392
 
  []
 
-[21] [22] [23]
+[20] [21] [22]
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
-81.
+57.
  ("C:\Program Files\MiKTeX 2.9\tex/latex/lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [24]
-Overfull \hbox (2.07597pt too wide) in paragraph at lines 493--494
+)
+Overfull \hbox (2.07597pt too wide) in paragraph at lines 469--470
 \TU/lmr/m/n/12 Internetové technologie – pojmy Internet, WWW, doména, webhostin
 g, cloud.
  []
 
-
-Overfull \hbox (0.99675pt too wide) in paragraph at lines 501--501
+[23]
+Overfull \hbox (0.99675pt too wide) in paragraph at lines 477--477
 |[]\TU/lmr/bx/n/17.28 Multimedia (digitální zvuk, fotografie a vi-
  []
 
-[25] [26]
-Overfull \hbox (4.01195pt too wide) in paragraph at lines 520--529
+[24]
+Overfull \hbox (4.01195pt too wide) in paragraph at lines 496--505
 \TU/lmr/m/n/12 - standarty: HDTV1080, HDTV720 (poměr 16:9) vs styrý SDTV (525px
 ,
  []
 
-[27] [28]
-Underfull \hbox (badness 10000) in paragraph at lines 572--577
+[25] [26] [27]
+Underfull \hbox (badness 10000) in paragraph at lines 548--553
 
  []
 
 Missing character: There is no ☺ in font [lmroman12-regular]:mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--581
+Underfull \hbox (badness 10000) in paragraph at lines 553--557
 
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 587--588
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
 
  []
 
-[30] [31] [32] [33] (maturitni-otazky-ivt.toc [34] [35] [36] [37])
+[28] [29] [30] [31] [32] (MO-ivt-public.toc [33] [34] [35] [36])
 \tf@toc=\write4
-\openout4 = `maturitni-otazky-ivt.toc'.
+\openout4 = `MO-ivt-public.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 676.
- [38]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 676.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 652.
+ [37]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 652.
 
-(maturitni-otazky-ivt.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 676.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 676.
-Package rerunfilecheck Info: File `maturitni-otazky-ivt.out' has not changed.
-(rerunfilecheck)             Checksum: 95096509E8DD92EC5D39DDC68872BA35;8041.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 676.
+(MO-ivt-public.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 652.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 652.
+Package rerunfilecheck Info: File `MO-ivt-public.out' has not changed.
+(rerunfilecheck)             Checksum: 578808A090DF1F4B6553CF88C70E176C;8153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 652.
  ) 
 Here is how much of TeX's memory you used:
- 22489 strings out of 427272
- 418855 string characters out of 3146595
- 555089 words of memory out of 3000000
- 26806 multiletter control sequences out of 15000+200000
+ 22490 strings out of 427272
+ 418738 string characters out of 3146595
+ 555193 words of memory out of 3000000
+ 26807 multiletter control sequences out of 15000+200000
  539441 words of font info for 48 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 45i,6n,48p,838b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 45i,6n,48p,831b,509s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on maturitni-otazky-ivt.pdf (38 pages).
+Output written on MO-ivt-public.pdf (37 pages).
