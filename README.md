@@ -1,8 +1,9 @@
 # Pár zpracovaných otázek ke školní maturitě z informatiky na Gymnáziu Jírovcova 8 pro rok 2020
 ###### Nějako jsem to zpracoval, nějako odmaturoval (za 1) a teď jsem to nějako upravil, abych to mohl nějako nasdílet dalším generacím
+## Jakub Ambroz 8.E
 Užívejte s rozumem, čtětě licenci a hodně zdaru při maturitě!
  - Stáhněte si odsud pdfko, či alternativně z google-disku: https://drive.google.com/drive/folders/11ZS_OuKVOYEBKaaA-x5SagkEmn-L-YLn?usp=sharing
- - Cílem bylo projetí si termínů k maturitě z IVT.  A když už to je, tak jsem se to rozhodl darovat lidu
+ - Cílem bylo projetí si termínů k maturitě z IVT. A když už to je, tak jsem se to rozhodl darovat lidu.
  - Je to většinou jen z wiki a hodin OV (online výuky), ale někde jsem využil zápisky v sešitě a obskurnější (než wikipedie) zdroje. Dost věcí chybí. Ale něco tu ale je!
  - Pokud někde narazíte na nějaké nejasnosti, tak **dejte vědět a možná to opravím**. Seznam už známých nedostatků je v issues na githubu.
   Pokud byste chtěli rozšířit o něco, co zde úplně chybí, tak když hezky poprosíte, tak možná. Ale spíš ne xD

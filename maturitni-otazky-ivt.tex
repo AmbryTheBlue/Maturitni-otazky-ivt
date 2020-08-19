@@ -5,83 +5,112 @@
 \usepackage{titlesec}										% Balíček pro změnu velikosti nadpisů
 \titleformat{\chapter}{\normalfont\bfseries\LARGE}{\thechapter}{1em}{}
 															% Odstranění „Kapitola“ z názvu kapitoly, děkuji Ambrymu
-\usepackage[colorlinks = true]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks = true, urlcolor  = blue]{hyperref}
 \usepackage{amsmath}
 \usepackage{soul}
 \usepackage{xcolor}
 \begin{document}
-\rightline{\today}
-\rightline{Jakub Ambroz 8.E}
-Deníček:
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+		\begin{Huge}
+		 \textbf{Pár zpracovaných otázek ke školní maturitě z~informatiky na Gymnáziu Jírovcova 8 pro rok 2020}\\
+		\end{Huge}
+		\vspace{0.5cm}
+		\begin{LARGE}
+		\textbf{\textcolor{red}{Verze 1.1}}
+		\end{LARGE}
+
+
+       \vspace{0.5cm}
+       Nějako jsem to zpracoval, nějako odmaturoval (za 1) a teď jsem to nějako upravil, abych to mohl nějako nasdílet dalším generacím
+       
+       \vspace{1.5cm}
+		\begin{LARGE}
+		\textbf{Jakub Ambroz 8.E}
+		\end{LARGE}
+		
+       \vfill
+       \vspace{0.8cm}
+       \includegraphics[width=0.8\textwidth]{logo-src.png}
+       Gymnázium, České Budějovice, Jírovcova 8\\
+       Česká republika\\
+       \today
+   \end{center}
+\end{titlepage}
+
+\addcontentsline{toc}{part}{Úvodní část}
+\section*{Meta}
+\subsubsection{Verze}
+Public 1.1, ze dne \today
+\subsubsection{Kde stáhnout?}
 \begin{itemize}
-\item 01.04.20 - OV s Kočerem, hardware (MO-7)
-\item 08.04.20 - OV s Kočerem: OOP, textový procesor (MO-10, MO-21,22)
-\item 15.04.20 - OV, multimédia (MO-16)
-\item 22.04.20 - OV, moderní trendy v IT (MO-18)
-\item 29.04.20 - OV, UNIX (MO-3,4,5 ??)
-\item 13.05.20 - OV - řeší se maturitní práce
-\item 18.05.20 prošel jsem si tabulkové kalkulátory (MO-23 a MO-24), ale něco mi ještě chybí\\
-do cca 17:30 jsem si prošel bitmapové (MO-19) a vektorové grafické editory (MO-20)
-\item 19.05.20 prošel jsem prezentace (MO-17)\\
- - 13:10 prošel jsem internetové technologie - MO-14\\
- - 17:21 tak konečně  těžší otázka, MO-12 Počítačové sítě dělám už 1.5h a trocha mi ještě chybí\\
- - 17:33 ještě chybí Referenční model ISO/OSI, ale to je na dýl, takže asi frčám na trénink.
-\item 20.05.20 12:14 ISO/OSI a TCP/IP done, dělám to asi od 10:40 (včera jsem se na to vykašlal a šel radši spát)\\
- - 14:11 jdu na MO-13 (internet)\\
- - 15:46 MO-13 asi done, jdu betonovat \dots
- - 23:31 MO-9 done, docela lehké, ale zajímavé odbočky, tak jsem to dělal asi 50 minut
-\item 21.05.20 12:15 MO-10 done (trvalo mi docela dlouho, na to že jsem věděl vše $\pm$ z hlavy, ale spousta zajímavých odboček na wiki)\\
- - 13:40 MO-11 (OOP) done, taky trvalo trochu déle, ale je tam dost věcí, který je možná dobrý radši vědět do hloubky
- - 17:13 začal jsem na MO-1 (v cca 15:10-15:40), ale betonování mě přerušilo, a asi to už nestihnu dodělat než budu muset jet na trénink,  17:45 jsem ještě trochu doplnil\\
- - 22:20 jdu dodělat MO-1\\
- - 23:11 MO-1 done! Zjistil jsem, že na textové procesory (MO-23,24) se budu muset ještě mrknout, ikdyž byly na OV. A MO-15 můžu asi taky považovat za done díky TM, ale možná si to sem ještě vypíšu ty příkazy.
-\item 22.05.2020 12:27 tak dneska jsem se docela flákal \dots ta historie (MO-2) mě nebavila, prošel jsem MO-3\\
- - 12:29 MO-4 asi taky dobrý\\
- - 12:30 MO-5 asi dobrý, co si nepamatuju, je tady v OV, možná bych si mohl zopakovat PuTTy\\
- - 12:52 MO-6 opět znám $\pm$ vše, takže jsem si hrál s maskami v GIMPu\\
- - 12:57 MO-7 je taky v poho všechno znám, a některé jediný pojem, co si nepamatuju je v OV (a to si pamatuju lol)\\
- - To znamená, že zbývají MO-8 (příslušenství PC) a MO-21,22 (Textový editor) a historie v MO-2. Tak to je dost dobrý.\\
- - 16:16 MO-2 asi done, nevím jak moc do hloubky s tou historií, ale stejně si to nezapamatuji, takže to asi nemá cenu
-\item  23.05.2020 doprošel jsem ještě fotoaparát a obecně jsem procházel otázky 1-12
+\item \url{https://github.com/AmbryTheBlue/Maturitni-otazky-ivt}
+\item \url{https://drive.google.com/drive/folders/11ZS_OuKVOYEBKaaA-x5SagkEmn-L-YLn?usp=sharing}
+\end{itemize}
+\subsection{O~díle}
+\begin{itemize}
+\item Cílem bylo projetí si termínů k~maturitě z~IVT.  A~když už to je, tak jsem se to rozhodl darovat lidu.
+\item Je to většinou jen z~wiki a hodin OV (online výuky), ale někde jsem využil zápisky v~sešitě a obskurnější (než wikipedie) zdroje.
+\item dost věcí chybí
+\item Něco tu ale je!
+\item Pokud někde narazíte na nějaké nejasnosti, tak \textbf{dejte vědět a možná to opravím}. (seznam už známých nedostatků je v~issues na githubu)\\
+Pokud byste chtěli rozšířit o~něco, co zde úplně chybí, tak když hezky poprosíte, tak možná. Ale spíš ne xD
+\item Předlohou tomuto byly otázky z~matematiky, ale informatiku, jsem zpracovával trochu jiným stylem, takže jsou místy prázdné nadpisy a tak. Matematika je rozhodně precizněji zpracováno.
+\item Zpracovával jsem to podle pojmů z~jednoho papíru. A~taky podle otázek z~předchozích ročníků. Na výše uvedený odkaz na google drive přiložím i .zip od Kočera. Ten už i nám sice tvrdil, že to musí updatovat (viz email v~moderních trendech IT), ale nám to ještě nezměnil, takže vám možná také ne. Otázky by ale měly zůstat $\pm$ stejně náročné či dokonce stejné a jen jinak uspořádané.
+\item Některé věci tu chybí fakt hodně. Něco jsem uměl, tak jsem to vynechal a něco jsem byl prostě líný zapsat. Ale nějaké otázky jsou více prakticky zaměřené a to se blbě zapisuje. $\implies$ \textbf{Vyzkoušejte si to sami!}
+\item \textbf{(nekomerčně) Šiřte a upravujte dílo a jeho deriváty, jak uznáte za vhodné} (jedinou podmínkou je zachování jména autora a zachování těchto dvou pravidel). Nenesu zodpovědnost, za nic co vám čtení tohoto způsobí. Pokud si odsud odnesete něco, kvůli čemu nedáte maturitu není to můj problém.
+\textbf{Plné znění licence je v~přiloženém souboru licence.txt}
+\item A~za to, že toto existuje je částečně zodpovědná \textbf{Terka Tranů}, která mě dokopala k~tomu, abych to udělal. Děkuji!
 \end{itemize}
 
+\begin{center}
+       \vspace{1.5cm}
+		\begin{LARGE}
+		\textbf{Hodně zdaru u~maturity!}
+		\end{LARGE}
+\end{center}
+
+\newpage
+\addcontentsline{toc}{part}{Jednotlivé maturitní otázky}
 \section{Základní pojmy IVT}
 \subsection{základní pojmy}
 \begin{enumerate}
-\item Informatika je věda o informacích - jejich získávání, zpracování a přenos. K tomu se dnes často používají počítače, které jsou schopny zpracovat velké množství informací.
+\item Informatika je věda o~informacích - jejich získávání, zpracování a přenos. K~tomu se dnes často používají počítače, které jsou schopny zpracovat velké množství informací.
 \item B = Byte = 8 bitů (bit je nejmenší jednotka informace)\\
 předpona soustavy SI k,M,G,T \dots jsou mocniny 1000 (protože metrická soustava $10^3$)\\
 ki, Mi, Gi \dots (čteme: kibi, mebi, gibi, tebi, pebi \dots) a jsou binární předpony = násobky 1024, protože $2^{10} = 1024$, přijat ČSN IEC 60027-2.\\
-Ale pořád se to divně motá: Win počítá velikost v MiB a mluví o nich jako o MB, Apple dělal dřív to samé ale teď už píše 1MB o souboru velikosti 1000 B. 
+Ale pořád se to divně motá: Win počítá velikost v~MiB a mluví o~nich jako o~MB, Apple dělal dřív to samé ale teď už píše 1MB o~souboru velikosti 1000 B. 
 \item HW vs SW
 \item soubor je nějaký obrázek, dokument, video \dots  = nositel nějakých dat\\
-adresář/složka slouží k uspořádání těchto souborů v hierarchálním stromě
-\item OS je hlavní program, který běží na počítači. Základní programové vybavení PC. Má na starosti přidělování zdrojů (paměť, procesor, grafická karta, úložiště) programům, které po OS běží. Řeší, taky vstupy jako myš, klávesnice a tak. Vytváří pro procesy \emph{aplikační rozhraní}. Umožňuje uživateli ovládat PC. Skládá se z jádra (kernel) a pomocných systémových nástrojů. Zaváděn při startu PC BIOSem do paměti, běží až do vypnutí.
+adresář/složka slouží k~uspořádání těchto souborů v~hierarchálním stromě
+\item OS je hlavní program, který běží na počítači. Základní programové vybavení PC. Má na starosti přidělování zdrojů (paměť, procesor, grafická karta, úložiště) programům, které po OS běží. Řeší, taky vstupy jako myš, klávesnice a tak. Vytváří pro procesy \emph{aplikační rozhraní}. Umožňuje uživateli ovládat PC. Skládá se z~jádra (kernel) a pomocných systémových nástrojů. Zaváděn při startu PC BIOSem do paměti, běží až do vypnutí.
 \end{enumerate}
 \subsection{Architektura počítače}
 \begin{enumerate}
 \item \emph{von Neumann}: data a instrukce programu jsou uložena na společné paměti na stejné sběrnici -> omezení, bottleneck \dots
 \begin{itemize}
-\item Procesorová jednotka ( ALU - artihmetic logical unit a registry = malá úložiště) - provádí operace s daty podle instrukcí
-\item Řídící jednotka (control unit) - zpracovává jednotlivé instrukce uložené v paměti
-\item paměť s daty a instrukcemi
+\item Procesorová jednotka ( ALU - artihmetic logical unit a registry = malá úložiště) - provádí operace s~daty podle instrukcí
+\item Řídící jednotka (control unit) - zpracovává jednotlivé instrukce uložené v~paměti
+\item paměť s~daty a instrukcemi
 \item externí úložiště
 \item I/O rozhraní
 \end{itemize} 
 \item \emph{Harvardská architektura}:
 \begin{itemize}
 \item odděluje paměť programu a dat - můžou mít různé technologie, frekvence, adresování \dots
-\item to umožňuje přístup k oběma pamětem paralelně -> větší rychlost\\ větší bezpečnost <- program nelze modifikovat
-\item paměť cache v procesoru (aby nebyl omezován rychlostí RAM)
+\item to umožňuje přístup k~oběma pamětem paralelně -> větší rychlost\\ větší bezpečnost <- program nelze modifikovat
+\item paměť cache v~procesoru (aby nebyl omezován rychlostí RAM)
 \end{itemize}
 \item \emph{Modifikovaná Harvardská architektura} - kombinuje oba přístupy, má sice oddělenou paměť pro data a program, ale ty využívají společná data a společnou adresovou sběrnici. Architektura umožňuje snadný přenos dat mezi oddělenými pamětmi.\\
-Na rozdíl od harvardské dovoluje přístup k paměti instrukcí jako by to byly data.\\
-Uvolňuje striktní rozdělení na instrukce a data, ale stále nechává CPU, přistupovat k několika (2+) sběrnicím zároveň.
+Na rozdíl od harvardské dovoluje přístup k~paměti instrukcí jako by to byly data.\\
+Uvolňuje striktní rozdělení na instrukce a data, ale stále nechává CPU, přistupovat k~několika (2+) sběrnicím zároveň.
 \end{enumerate}
 \subsection{převody dat}
 \begin{enumerate}
-\item čísla se můžou jednoduše ukládat po bitech/bytech, protože je to vlastně číslo v dvojkové soustavě (problém záporná čísla)\\
-Pro znaky ASCII -> UTF-8 (brutální rozsah, nevyužívá pro některé znaky maximum bytů ale jen část (šetří velikost, ale komplikované interpretace), zpětně kompatibilní s ASCII)
+\item čísla se můžou jednoduše ukládat po bitech/bytech, protože je to vlastně číslo v~dvojkové soustavě (problém záporná čísla)\\
+Pro znaky ASCII -> UTF-8 (brutální rozsah, nevyužívá pro některé znaky maximum bytů ale jen část (šetří velikost, ale komplikované interpretace), zpětně kompatibilní s~ASCII)
 \item American Standard Code for Information Interchange - je tabulka číslic, velkých a malých písmen a několika speciálních znaků a řídící kódy. 128 znaků = 7bitů
 \item $(206)_10 = (128 + 64 + 8 + 4 +2)_10 = (11001110)_2$
 \item $(11100011101010)_2 = (38ea)_{16} = (16 \cdot 10 + 16^2 \cdot 14 + 16^3 \cdot 8 + 16^4 \cdot 3)_10$
@@ -97,57 +126,57 @@ Základní pojmy informatiky (bit, byte, adresář, soubor, HW, SW, atp.), uklá
 \item Historie PC: (př \href{https://historiepocitacu.cz/obecny-prehled-generaci-pocitacu.html}{link})
 \begin{itemize}
 \item \emph{Nultá generace}: elektromechanické počítače využívající většinou elektromagnetické relé. Z: Mark I, Mark II, český SAPO (SAmočinný POčítač)
-\item \emph{První generace} - elektronky. Pořád drahé, velká poruchovost a nízká výpočetní síla. Využívali děrné štítky, nebo děrné pásky \dots Z: ENIAC (smyčky a skoky, turingovsky úplný), MANIAC - výpočty k vývoji jaderné bomby.
+\item \emph{První generace} - elektronky. Pořád drahé, velká poruchovost a nízká výpočetní síla. Využívali děrné štítky, nebo děrné pásky \dots Z: ENIAC (smyčky a skoky, turingovsky úplný), MANIAC - výpočty k~vývoji jaderné bomby.
 \item \emph{Druhá generace} -  \emph{tranzistory} -> zlepšení parametrů (rychlost, spolehlivost, snížení prostorových a energetických nároků). Z: UNIVAC (komerční sériově vyráběný), český EPOS
 \item  \emph{Třetí generace} - monolitické a hybridní \emph{integrované obvody} - průlom do praktického komerčního využití. Z: IBM System 360, Cray
 \item \emph{Tříapůltá generace} - občas se vyznačuje takto samostatně, zdokonalená řada počítačů 3- generace. Už velkost jen jedné skříně.
-\item \emph{Čtvrtá generace} - osobní počítače <- mikroprocesory (v jednom pouzdře celý procesor), využití integrovaných obvodů s vysokou integrací. Z: IBM PC (1981). Přichází grafická rozhraní atd.
+\item \emph{Čtvrtá generace} - osobní počítače <- mikroprocesory (v~jednom pouzdře celý procesor), využití integrovaných obvodů s~vysokou integrací. Z: IBM PC (1981). Přichází grafická rozhraní atd.
 \item \emph{Pátá generace} - uvažuje se, že by to mohly být kvantové počítače
 \end{itemize}
 \item vynálezy: relé, elektronka, tranzistor, integrovaný obvod
-\item Historie internetu: ARPANET - vytvoření protokolů TCP/IP (70.-80. léta). První komerční ISP(internet service provider, konec 80.léta). Od 1995 bez restrikcí v komerčním sektoru.\\
-\emph{WWW} vymyšlen v CERNu (Tim Berners-Lee). Umožňuje linkování (propojování) dokumentů pomocí hypertextových odkazů.\\
+\item Historie internetu: ARPANET - vytvoření protokolů TCP/IP (70.-80. léta). První komerční ISP(internet service provider, konec 80.léta). Od 1995 bez restrikcí v~komerčním sektoru.\\
+\emph{WWW} vymyšlen v~CERNu (Tim Berners-Lee). Umožňuje linkování (propojování) dokumentů pomocí hypertextových odkazů.\\
 \emph{Eternal September} - Září, které neskončilo. Usenet přístup nové obrovské vlně uživatelů. 
 \end{enumerate}
 \subsection{GIMP}
 \begin{itemize}
 \item když chci vybranou věc posunout musím dát ctrl-x a ctrl-v (tím se to vytvoří ve vlastní vrstvě)
-\item vybrat výběry: klávesové zkratky, horní menu ->nástroje ->výběry , prvé tlačítko v toolboxu (tab přepíná jestli jsou vidět)
+\item vybrat výběry: klávesové zkratky, horní menu ->nástroje ->výběry , prvé tlačítko v~toolboxu (tab přepíná jestli jsou vidět)
 \item rotace je pod transformacemi (pravé tlačítko)
 \end{itemize}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Historie PC, druhy počítačů. Ukázka práce v bitmapovém grafickém editoru.
+Historie PC, druhy počítačů. Ukázka práce v~bitmapovém grafickém editoru.
 
 \section{Operační systémy}
 \subsection{Ergonomie}
-Pravý úhel v koleni, lokti. Záda rovná podepřená židlí, monitor v úrovni očí, ruce na stole \dots jinak je asi celá otázka v OV nebo jsem něco podobného několikrát dělal v ovládacích panelech\\
+Pravý úhel v~koleni, lokti. Záda rovná podepřená židlí, monitor v~úrovni očí, ruce na stole \dots jinak je asi celá otázka v~OV nebo jsem něco podobného několikrát dělal v~ovládacích panelech\\
 Ještě DHCP Dynamic Host Configuration Protocol - automaticky vše udělá po připojení do sítě\\
-Ještě asi kořenový adresář v linuxu atd. (\href{https://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/}{cca takhle link})
-\subsection{poznámky z OV 29.04.20}
+Ještě asi kořenový adresář v~linuxu atd. (\href{https://www.howtogeek.com/117435/htg-explains-the-linux-directory-structure-explained/}{cca takhle link})
+\subsection{poznámky z~OV 29.04.20}
 \label{sec:OV_OS}
-kombinace s otázkou 5
+kombinace s~otázkou 5
 \begin{itemize}
 \item Počítač je stroj zpracovávající vstupní data na výstupní na základě nějakého předpisu. OS je p "nadprogram", který umožňuje spouštět další programy -> stroj se stává univerzálním
-\item epocha UNIXu se datuje od 01.01.1970 -> z něj se vyvinulo FreeBSD i MacOS X, (Linux trochu bokem)
+\item epocha UNIXu se datuje od 01.01.1970 -> z~něj se vyvinulo FreeBSD i MacOS X, (Linux trochu bokem)
 \item OS je základní softwarové vybavení OS, proces jeho zavedení se nazývá BOOTování
- - řeší i přístup k HW - jako myš, klávesnice \dots , také řeší interakci s uživatelem
-\item Aplikace je předpis, který není ve strojovém jazyce toho počítače. Mluví s tím OS. Je to program běžící pod programem nazývaným OS.
-\item OS organizuje přístup ke zdrojům -> poskytuje \emph{služby OS} - přiděl paměť, příjem infa z klávesnice, zobraz něco na displej \dots
+ - řeší i přístup k~HW - jako myš, klávesnice \dots , také řeší interakci s~uživatelem
+\item Aplikace je předpis, který není ve strojovém jazyce toho počítače. Mluví s~tím OS. Je to program běžící pod programem nazývaným OS.
+\item OS organizuje přístup ke zdrojům -> poskytuje \emph{služby OS} - přiděl paměť, příjem infa z~klávesnice, zobraz něco na displej \dots
 \item je-li to standardizované, tak je snažší vytváření programů a plikací běžícími pod OS
 \item \emph{Shell} = uživatelské rozhraní
 \item \emph{komunikační rozhraní } = \emph{User Interface} = UI \\
 \emph{Příkazová řádka} = \emph{Command line interface} CLI\\
 \emph{Grafické rozhraní} = \emph{Graphical User interface}  = GUI\\
-\emph{Textové rozhraní} = \emph{Text User Interface} = TUI - jen text s trochou barev, stylu a formátování\\
+\emph{Textové rozhraní} = \emph{Text User Interface} = TUI - jen text s~trochou barev, stylu a formátování\\
 \emph{Webové rozhraní}
-\item OS jdu dělit na základě různých kritérií, př.: \emph{single-user} vs \emph{multi-user} nebo \emph{singletasking} (jedno procesový OS) vs \emph{multitasking} (dnes normální) (\emph{multiprocesing} = více procesorů v počítači vs \emph{multithreading} = rychlé přepínání procesů - dnes se termín používá k označení, že jeden proces má více vláken
+\item OS jdu dělit na základě různých kritérií, př.: \emph{single-user} vs \emph{multi-user} nebo \emph{singletasking} (jedno procesový OS) vs \emph{multitasking} (dnes normální) (\emph{multiprocesing} = více procesorů v~počítači vs \emph{multithreading} = rychlé přepínání procesů - dnes se termín používá k~označení, že jeden proces má více vláken
 \item \emph{MS-DOS} single-user, singletask
 \item \emph{MS Windows} - multitasking
 \item UNIX - od počátku (70. léta) multi-user, multitask
-\item Vytvářen systém Multics  v Bell laboratories - moc složitý -> Unics -> UNIX - napsán v novém jazyce C (velký krok - nebyl psán v assembleru -> snazší přenos na jiný HW)\\
-Předán univerzitě v Berkley -> BSD - kód se otevřel -> FreeBSD
+\item Vytvářen systém Multics  v~Bell laboratories - moc složitý -> Unics -> UNIX - napsán v~novém jazyce C (velký krok - nebyl psán v~assembleru -> snazší přenos na jiný HW)\\
+Předán univerzitě v~Berkley -> BSD - kód se otevřel -> FreeBSD
 \item Free software fundation -> systém GNU na zelené louce - díky kvalitě (třeba překladač jazyka C) se stal základem většiny Free verzí
 \item Dnes jen 2 základní typy OS: UNIX a Windows\\
 Win - pro běžného uživatele, gaming, desktopové systémy\\
@@ -156,17 +185,17 @@ UNIX - servery (dominuje, ale existují i MS řešení), mobily a tablety (MS m�
 \end{itemize}
 
 \subsubsection{Souborový systém}
-Přímo konstrukce a firmware určují základní organizaci úložiště do např. bytů. Dále si je organizuje OS. Tabulka názvů souborů a jejich umístění v paměti. Nekonečný seznam souborů - nepřehledné -> adresáře/složky. Jejich organizace a strukturalizace může být různá. Tomu se říká filesystem.
+Přímo konstrukce a firmware určují základní organizaci úložiště do např. bytů. Dále si je organizuje OS. Tabulka názvů souborů a jejich umístění v~paměti. Nekonečný seznam souborů - nepřehledné -> adresáře/složky. Jejich organizace a strukturalizace může být různá. Tomu se říká filesystem.
 \begin{itemize}
-\item FAT  = \emph{File allocation table} - data o datech uloží do jednoduchá databáze; od windows (předchůdce NTFS), jednoduchý, dnes ve všech systémech čitelný - používá se v SD kartách
+\item FAT  = \emph{File allocation table} - data o~datech uloží do jednoduchá databáze; od windows (předchůdce NTFS), jednoduchý, dnes ve všech systémech čitelný - používá se v~SD kartách
 \item NTFS = \emph{New Technology File System} - windows
-\item Journalling file system (vychází z unixového UFS (\emph{Unix file system})) u Mac OS
+\item Journalling file system (vychází z~unixového UFS (\emph{Unix file system})) u~Mac OS
 \item EXT = \emph{Extended file system} - nahradil  UFS, pro linux
 \item Unixový adresářový strom
 \end{itemize}
 \subsubsection{Příkazová řádka}
 \begin{itemize}
-\item Na potítku bude k dispozici tahák s příkazy, v nejhorším případě požít mc (\emph{midnight commander})
+\item Na potítku bude k~dispozici tahák s~příkazy, v~nejhorším případě požít mc (\emph{midnight commander})
 \item cd (absolutní nebo relativní parametr, prázdné -> domovský adresář)
 \item pwd - aktuální adresa
 \item ls, rm, uname -a [vypíše typ unixu]
@@ -197,62 +226,62 @@ chmod 777 (r-- je 4)\\
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Operační systémy – rozdělení, základy práce s operačním systém MS Windows (základní nastavení pracovní plochy, vzhledu a základního chování); aktualizace systému, ovládací panely, nástroje pro správu, správa
-uživatelských účtů. Ergonomie práce s PC.
+Operační systémy – rozdělení, základy práce s~operačním systém MS Windows (základní nastavení pracovní plochy, vzhledu a základního chování); aktualizace systému, ovládací panely, nástroje pro správu, správa
+uživatelských účtů. Ergonomie práce s~PC.
 
 \section{Instalace OS unixového typu}
-\subsection{poznámky z OV 29.04.20}
+\subsection{poznámky z~OV 29.04.20}
 \ref{sec:OV_OS} 
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
 Instalace OS unixového typu – ukázka virtualizace OS Unixového typu na PC. Instalace systému, popis systému. Souborové systémy, organizace souborového systému. CLI, GUI
 
-\section{Práce s OS unixového typu}
+\section{Práce s~OS unixového typu}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Práce s OS unixového typu –Práce v příkazovém řádku, pohyb v souborovém systému, práce se soubory, uživatelská práva, práce s procesy
+Práce s~OS unixového typu –Práce v~příkazovém řádku, pohyb v~souborovém systému, práce se soubory, uživatelská práva, práce s~procesy
 
 \section{Stavba PC, instalace a konfigurace OS}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Stavba PC, instalace a konfigurace OS – části PC, základní HW a SW části počítače, základ instalace a konfigurace OS (Windows či unixového typu). Praktická ukázka práce s grafickým editorem.
+Stavba PC, instalace a konfigurace OS – části PC, základní HW a SW části počítače, základ instalace a konfigurace OS (Windows či unixového typu). Praktická ukázka práce s~grafickým editorem.
 
 \section{HW počítače 1}
 \begin{itemize}
 \item BIOS = Basic Input/Output System
-\item northbridge spojuje CPU s RAM, PCI-E a Southbridge
+\item northbridge spojuje CPU s~RAM, PCI-E a Southbridge
 \item Southbridge = vstupně-výstupní řadič , připojuje SATA, PCI, SuperI/O (klávesnice, myš)
 \end{itemize}
-\subsection{Poznámky z hodiny OV}
+\subsection{Poznámky z~hodiny OV}
 01.04.2020
 Pořád se opakuje, co je počítač, neumannovská/ harvardská architektura. atd..\\
 \begin{itemize}
 \item Počítač  - Stroj
 \item \emph{PC} - osobní počítač (Personal Computer) - pro běžného uživatele, tablety už se neřadí, ale je to na hraně. Rozlišuje se podle plnohodnotného OS, klávesnice, myš. Dotyková obrazovka může být navíc.
-\item \emph{Jednočipový počítač} - komplet celý počítač je v jednom čipu (př. Atmega8) v něm paměť úložiště, časovač, všechno... př.:\\
+\item \emph{Jednočipový počítač} - komplet celý počítač je v~jednom čipu (př. Atmega8) v~něm paměť úložiště, časovač, všechno... př.:\\
  - \emph{Arduino} ho má (ten jeden podlouhlý čip)\\
- - \emph{Microbit} - 32bitový čip (býval v mobilních telefonech)\\
+ - \emph{Microbit} - 32bitový čip (býval v~mobilních telefonech)\\
  - \emph{ESP} - vsoučasné době ESP32, jako arduino ovládá piny, má wi-fi\\
  - nepatří tam \emph{Rasberry Pi} - vícečipů (síť, .?) -> jednodeskové počítač, téměř PC\\
- - dnes jednočipové v pračkách, myčkách, atd.. 
-\item \emph{Server} - ?zmatení pojmů HW, SW v sítích?, síťové služby můžete rozběhnout i na Rasberry Pi. \\ HW: grafická karta málo výkonná (nemá uživatelské rozhraní), více RAM a procesoru -> větší výkon. Potřebují rychlý výpočet, výdrž(běh 24/7), ukládání hodně dat (i záložní disky) - speciální serverové harddisky (dražší.. -<- lepší ložiska, materiál, u SSD větší četnost zápisu)  často v RAID polích. Velké chlazené samostatné skříně - rack.
+ - dnes jednočipové v~pračkách, myčkách, atd.. 
+\item \emph{Server} - ?zmatení pojmů HW, SW v~sítích?, síťové služby můžete rozběhnout i na Rasberry Pi. \\ HW: grafická karta málo výkonná (nemá uživatelské rozhraní), více RAM a procesoru -> větší výkon. Potřebují rychlý výpočet, výdrž(běh 24/7), ukládání hodně dat (i záložní disky) - speciální serverové harddisky (dražší.. -<- lepší ložiska, materiál, u~SSD větší četnost zápisu)  často v~RAID polích. Velké chlazené samostatné skříně - rack.
 \item Rozdělení počítačů: PC, NB, tablet, mobil...
-\item \emph{Základová deska} - Motherboard. Slot/ socket/ patice na procesor - AMD, Intel, ARM (mobily hodně). Operační paměť (RAM) = DDR, neplést s PCI (tak to se mi snad nestane). Úložiště - porty SATA (Serail ATA  =starý port, dnes používá se max na CD/DVD mechaniku). Napájecí port - 12V stejnosměrné, zdroj umí další 5V stejnosměrný a 3,3V.\\
+\item \emph{Základová deska} - Motherboard. Slot/ socket/ patice na procesor - AMD, Intel, ARM (mobily hodně). Operační paměť (RAM) = DDR, neplést s~PCI (tak to se mi snad nestane). Úložiště - porty SATA (Serail ATA  =starý port, dnes používá se max na CD/DVD mechaniku). Napájecí port - 12V stejnosměrné, zdroj umí další 5V stejnosměrný a 3,3V.\\
  - \emph{čipová sada} (= čipset) - slouží ke komunikaci částí základní desky, severní a jižní můstek (Northbridge - rychlé (procesor, paměť, grafika), Southbridge - pomalé (periferie)), říká se mu také řadič\\
- - \emph{BIOS} - uložen v malé paměti (často flash) s hodinami (proto je na desce i baterie)\\
- - \emph{SATA} - nahradil paralelní ATA, přestože je sériový je rychlejší <- vyšší frekvence tiků. Ta není možná u ATA, protože elektromagnetická indukce. Dnes ve 3 verzích, každá 2-krát rychlejší než předchozí. SATA I - 150 MB/s\\
+ - \emph{BIOS} - uložen v~malé paměti (často flash) s~hodinami (proto je na desce i baterie)\\
+ - \emph{SATA} - nahradil paralelní ATA, přestože je sériový je rychlejší <- vyšší frekvence tiků. Ta není možná u~ATA, protože elektromagnetická indukce. Dnes ve 3 verzích, každá 2-krát rychlejší než předchozí. SATA I~- 150 MB/s\\
  \item \emph{USB} - Universal Serial Bus -> složitý protokol (univerzální a sériový). Liší se barvou:\\2.0 - černá\\3.0 - modrá - srovnatelná rychlost se SATA III, 10x rychlostUSB 2.0, nemá povolenou takovou proudovou zátěž - ty určené na nabíjení se označují \\?3.1 nebo 4.0? - červená\\
 Na mobilech microUSB nebo novější USB-C - větší proud, jiný tvar (oboustranný)
 \item Konektory:\\
  - \emph{RJ-45} - název kabelu unshielded twisted pair -stočený proti elektromagnetické indukci, Ethernet\\
  - \emph{HDMI} - digitální Multimedia Interface - obrazu \textbf{a} zvuku zároveň. Starší konektory videa VGA, DVI (digitální)
 \item Typy úložišť: HDD vs SSD:\\
- - \emph{HDD} - otáčející se hlavičky čtou z zmagnetizovatelného materiálů\\
+ - \emph{HDD} - otáčející se hlavičky čtou z~zmagnetizovatelného materiálů\\
  - \emph{SSD} - jako flash paměť -> problém opakovaného přepisování dat do jedné paměťové buňky - čekalo se na technologický pokrok do řádů tisíců\\
-\item \emph{GPU} - grafická karta, velmi rychlé výpočty (oproti běžnému procesoru) zejména s pohyblivou desetinnou čárkou. Nvidia, AMD
+\item \emph{GPU} - grafická karta, velmi rychlé výpočty (oproti běžnému procesoru) zejména s~pohyblivou desetinnou čárkou. Nvidia, AMD
 \item \emph{HDD} - kapacita, počet otáček (standart 5400, 7200 otáček za minutu) - ovlivňuje rychlost náhodného čtení (čím vyšší tím lepší pro stejnou kapacitu), některé servery záměrně pomalejší (delší výdrž, výkon nebyl třeba), ale dnes kvůli webovým aplikacím začal záležet i výkon
 \item \emph{RAID} - ochrana proti rozbití disku - redundantní informace. Může i zvýšit čtení a zápis. 
 \end{itemize} 
@@ -267,9 +296,9 @@ HW počítače 1. – složení PC a základní parametry jednotlivých komponen
 \begin{enumerate}
 \item Typy:\\
 \emph{jehličkové} jehličky přes barvící pásku píší na papír (ve veřejné dopravě); pomalejší (na grafiku) ale levnější tam kde nezáleží na kvalitě, hlučné \\
-\emph{inkoustové} tisková hlava tryská z mikroskopických trysek miniaturní kapičky inkoustu; kvalitní černobílý a barevný tisk, nízká cena, ale často drahý inkoust \\
+\emph{inkoustové} tisková hlava tryská z~mikroskopických trysek miniaturní kapičky inkoustu; kvalitní černobílý a barevný tisk, nízká cena, ale často drahý inkoust \\
 \emph{laserové}  ?fungují na principu kopírky?, laser na fotocitlivý (selenový) válec - na jeho povrch se nanáší toner - uchytí se na osvětlených místech a obtiskne se na papír - tam je poté teplem a tlakem fixován; dražší, ale levnější provoz - rychlý a tichý, kvalita\\
-\emph{LED tiskárny} - podobné laserovým, o něco kompaktnější, lepší odstíny
+\emph{LED tiskárny} - podobné laserovým, o~něco kompaktnější, lepší odstíny
 \item princip viz hore
 \item (ne)výhody taktéž viz hore
 \end{enumerate}
@@ -277,15 +306,15 @@ HW počítače 1. – složení PC a základní parametry jednotlivých komponen
 \begin{enumerate}
 \item \emph{CRT} - velmi rozměrná elektronka (uvnitř vakuum), elektrony jsou urychlovány na obrazovku, kde dopadají na stínítko, kde tak způsobují sekundární emisi, což se projeví rozsvícením bodu\\
 \emph{LCD (liquid crystal display} - barevné monochromatické pixely, ovlivnění stočení krystalů (polarizace?) -> ovlivnění jaké světlo projde, RGB subpixely\\
-\emph{plazmová obrazovka} pro velké úhlopříčky (přes 80cm), použity malé buňky s elektricky nabitými částicemi ionizovaného plynu (odtud název plazmová)\\
-\emph{LED obrazovka} - princip aditivního sčítání barev světelných diod (LED = light emitting diode) - 3 barvách RGB z dálky splynou v jeden barevný bod, velká frekvence. \emph{OLED} je organický typ LED
+\emph{plazmová obrazovka} pro velké úhlopříčky (přes 80cm), použity malé buňky s~elektricky nabitými částicemi ionizovaného plynu (odtud název plazmová)\\
+\emph{LED obrazovka} - princip aditivního sčítání barev světelných diod (LED = light emitting diode) - 3 barvách RGB z~dálky splynou v~jeden barevný bod, velká frekvence. \emph{OLED} je organický typ LED
 \item LCD: kompaktní, omezené pozorovací úhly;
 CRT: větší, těžší, malá odezva, dobré barvy
 \item konektory D-sub, VGA, HDMI, DisplayPort
 \item frekvence 24Hz, úhlopříčka - 21'' (palců), rozlišení FullHD (1920x1080 px) nebo HD (1280 $\times$ 720 px), poměr stran 4:3 ->16:9, spotřeb (32Watt), kontrast, dotykovost
 \end{enumerate}
 \subsection{Kamery a foťáky}
-něco v OV o multimédiích
+něco v~OV o~multimédiích
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
@@ -293,14 +322,14 @@ HW počítače 2 – periferní zařízení počítače (tiskárny, monitory, sc
 
 \section{Algoritmizace}
 \begin{enumerate}
-\item \emph{Algoritmus} je přesný návod nebo postup (např. jak vyřešit nějaký problém, či jak udělat nějakou složitější operaci). V programování je to teoretický princip řešení problému. Za algoritmus se může považovat i kuchařský recept
+\item \emph{Algoritmus} je přesný návod nebo postup (např. jak vyřešit nějaký problém, či jak udělat nějakou složitější operaci). V~programování je to teoretický princip řešení problému. Za algoritmus se může považovat i kuchařský recept
 \item Vlastnosti
 \begin{itemize}
-\item elementárnost - skládá se z konečného počtu jednoduchých kroků
+\item elementárnost - skládá se z~konečného počtu jednoduchých kroků
 \item \emph{konečnost (rezulativní)} - po určitém počtu kroků skončí
 \item \emph{obecnost} (univerzálnost) - neřeší jeden konkrétní problém, ale celou třídu podobných (obdobných) problémů
-\item \emph{Determinovanost} (opakovatelnost) - za stejných podmínek poskytne vždy stejný výstup. Není požadovaná u všech - míchání karet, šifrování \dots pravděpodobnostní algoritmy
-\item \emph{Determinismus} - každý krok musí být přesně a jednoznačně určen (definován). Tak aby bylo v každé situaci jasné, co se má provést (programovací jazyky (zejména Python) ->program = výpočetní metoda v prg.j.)
+\item \emph{Determinovanost} (opakovatelnost) - za stejných podmínek poskytne vždy stejný výstup. Není požadovaná u~všech - míchání karet, šifrování \dots pravděpodobnostní algoritmy
+\item \emph{Determinismus} - každý krok musí být přesně a jednoznačně určen (definován). Tak aby bylo v~každé situaci jasné, co se má provést (programovací jazyky (zejména Python) ->program = výpočetní metoda v~prg.j.)
 \item \emph{Výstup} - má nějaký výstup, který je odpovědí na problém, který má řešit
 \item \emph{Srozumitelnost} - záleží na potřebě upravovat či komu ho máme vysvětlit (př. vysvětlení opravy PC problémů spolužákovy a babičce)
 \end{itemize}
@@ -313,8 +342,8 @@ podprogram obdélník se svislými čarami po stranách\\
 vstup/výstup - rovnoběžník\\
 data - válec
 \item Kořeny kvadratické rovnice - vypočti determinant, porovnej je-li kladný, záporný nebo nula. Podle toho vypočítej kořeny.\\
-největší číslo z posloupnosti - za k ulož 0, je-li následující číslo větší než k, ulož ho za k, neexistuje-li další číslo, tak vypiš k
-\end{enumerate}
+největší číslo z~posloupnosti - za k~ulož 0, je-li následující číslo větší než k, ulož ho za k, neexistuje-li další číslo, tak vypiš
+k~\end{enumerate}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
@@ -323,21 +352,21 @@ Algoritmizace – algoritmus a jeho vlastnosti, zápis algoritmu, základní pro
 \section{Strukturované programování}
 \label{sec:program_jazyk}
 \begin{enumerate}
-\item K zapsání algoritmu počítačem zpracovatelnou podobou. Je to soubor pravidel pro zápis postupu/algoritmu.
+\item K~zapsání algoritmu počítačem zpracovatelnou podobou. Je to soubor pravidel pro zápis postupu/algoritmu.
 \item Python (lehký), C a C++ (dříve vyšší, dnes nižší, vývoj OS a ovladače), Java, Javascript (web)
 \item Dělení: 
 \begin{itemize}
 \item Vyšší vs nižší
-\item kompilované (kód se překládá do zdrojového kódu, př C) vs interpretované (jiným programem, který vykoná funkce v kódu, -> multplatformní protože se nemusí překládat do strojového kódu jednotlivého procesoru, ale pomalejší \dots, př: JS, Python): čistá interpretace vs interpret bytekódu (zkompilováno do mezoformy bytecode a ta je potom přenositelná mezi počítači, př. Java) vs překlad za běhu (Just in time)
+\item kompilované (kód se překládá do zdrojového kódu, př C) vs interpretované (jiným programem, který vykoná funkce v~kódu, -> multplatformní protože se nemusí překládat do strojového kódu jednotlivého procesoru, ale pomalejší \dots, př: JS, Python): čistá interpretace vs interpret bytekódu (zkompilováno do mezoformy bytecode a ta je potom přenositelná mezi počítači, př. Java) vs překlad za běhu (Just in time)
 \item Dynamické vs statické proměnné
 \item imperativní (říkáme jak to chceme udělat) vs deklarativní (říkáme, co chceme udělat, databbase query languages (příklad SQL) či logické a funkcionální programování)
 \end{itemize}
-\item Datové typy v Java (\href{https://www.w3schools.com/java/java_data_types.asp}{link}):
+\item Datové typy v~Java (\href{https://www.w3schools.com/java/java_data_types.asp}{link}):
 \begin{itemize}
 \item  byte, short, int, long, float, double, boolean, char
 \item  String Array, classes
 \end{itemize}
-V C++ (\href{https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm}{link}):
+V~C++ (\href{https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm}{link}):
 \begin{itemize}
 \item bool, char, int,  float, double (double floating point), void
 \item modifikátory: signed, unsigned, short, long
@@ -357,16 +386,16 @@ Strukturované programování – návrh programu, základní datové typy, roz�
 \item procedurální programování využívá proměnné, cykly, funkce, podmínky \dots \\
 Objektově orientované - zavádí objekty, které mají nějaké vlastnosti, které se mohou měnit pomocí metod.
 \item Python, Java, C++
-\item Třída je způsob, jak uspořádat informace do nějaké entity. Instancí třídy je objekt, což je konkrétní realizace předpisu. Tedy objekt má nějaké konkrétní hodnoty/stav dat (atributů) a pomocí metod s nimi můžeme operovat. Takže nás nemusí dále zajímat, jak to vnitřně funguje a můžeme jich jen využívat - \emph{zapouzdření}.\\
+\item Třída je způsob, jak uspořádat informace do nějaké entity. Instancí třídy je objekt, což je konkrétní realizace předpisu. Tedy objekt má nějaké konkrétní hodnoty/stav dat (atributů) a pomocí metod s~nimi můžeme operovat. Takže nás nemusí dále zajímat, jak to vnitřně funguje a můžeme jich jen využívat - \emph{zapouzdření}.\\
 Dědičnost mezi třídami
 \item hrdiny.py využít spíše IDLE
 \item projeto
-\item \emph{Událostmi řízené programování (Event-driven programming)} je typ asynchronního programování, kde je tok programu řízen pomocí událostí: kliknutí (a puštění) klávesy (tlačítka myši) pohyb myši \dots (můžou to být i příchozí informace z jiného programu, časovače či senzoru). Dominantní v GUI (grafickém rozhraní).\\
+\item \emph{Událostmi řízené programování (Event-driven programming)} je typ asynchronního programování, kde je tok programu řízen pomocí událostí: kliknutí (a puštění) klávesy (tlačítka myši) pohyb myši \dots (můžou to být i příchozí informace z~jiného programu, časovače či senzoru). Dominantní v~GUI (grafickém rozhraní).\\
 Většinou je tam hlavní smyčka, která poslouchá eventy (?event listeners) a když je "triggered" (spuštěna), tak zavolá nějakou funkci.\\
-\emph{Event handler (obsluha události)} je funkce nebo něco, které s událostí dále operuje (třeba zmáčknutí tlačítka způsobí vyskočení okna).
+\emph{Event handler (obsluha události)} je funkce nebo něco, které s~událostí dále operuje (třeba zmáčknutí tlačítka způsobí vyskočení okna).
 \item vektor.py speciální třídy pomocí podtržítek. Porovnání, matematické operace, převedení na string a inicializace \dots
 \end{enumerate}
-\subsection{Poznámky z hodiny OV}
+\subsection{Poznámky z~hodiny OV}
 Většina dnešních programovacích jazyků. Zavádí pojem objektu. Třída předpis objektů.\\
 Nedával jsem moc pozor, řešila se inicializace a metody objektu.
 
@@ -382,38 +411,38 @@ Objektově orientované programování – Základní pojmy OOP – atributy, me
 \emph{Podle postavení uzlů}: peer-to-peer (sobě rovné stanice) vs client-server (server poskytuje klientovy služby)\\
 \emph{Vlastnictví}: Veřejná (př.: wifi) , privátní , VPN (virtual private network)\\
 \emph{Topologie}: 	sdílené spoje: sběrnice (a centrální vysílač); dvoubodové spoje: Hvězda -> Strom (existuje i kruh - zpráva koluje, moc se nepoužívá)
-\item \emph{ISO/OSI} (Open Systems Interconnection model) - 7 vrstev, komunikace v rámci vrstev se řídí podle soustavy pravidel = \emph{protokol}.
+\item \emph{ISO/OSI} (Open Systems Interconnection model) - 7 vrstev, komunikace v~rámci vrstev se řídí podle soustavy pravidel = \emph{protokol}.
 \begin{enumerate}
 \item \emph{Fyzická vrstva} - řeší mechanickou, elektrickou stránku. Patří sem huby, opakovače. Zajišťuje správný přenos "jedniček a nul"
 \item \emph{Linková} - zařizuje spojení 2 sousedních systémů. Patří sem mosty (bridge), přepínače (switch). Umí detekovat a opravovat chyby vzniklé při fyzickém přenosu.
-\item \emph{Síťová} se stará o síťové adresování a směřování (routing) .Zajišťuje spojení mezi systémy, které spolu přímo nesousedí. Pracuje se s hierarchickou strukturou adres - protokol \textbf{IP}.
+\item \emph{Síťová} se stará o~síťové adresování a směřování (routing) .Zajišťuje spojení mezi systémy, které spolu přímo nesousedí. Pracuje se s~hierarchickou strukturou adres - protokol \textbf{IP}.
 \item \emph{Transportní} zajišťuje přenos dat mezi koncovými uzly. Poskytuje takovou kvalitu, jakou požadují vyšší vrstvy. Nabízí TCP (\emph{Transmission control protocol}) - přenos se zárukami, kde nesmí chybět ani packet - a UDP ( User datagram protocol) - bez záruky doručení (stremování \dots).
-\item \emph{Relační} (relace =session)  organizuje a synchronizuje dialog mezi spolupracujícími relačními vrstvami. K paketům synchronizační značky - poskládá je do správného pořadí, ikdyž jsou chyby při přesnou po síti.
+\item \emph{Relační} (relace =session)  organizuje a synchronizuje dialog mezi spolupracujícími relačními vrstvami. K~paketům synchronizační značky - poskládá je do správného pořadí, ikdyž jsou chyby při přesnou po síti.
 \item \emph{Prezentační} - Transformuje data do tvaru, který požaduje aplikace: (de)šifrování, (de)komprimace
 \item \emph{Aplikační vrstva} - poskytuje aplikacím ke komunikačnímu systému. Protokoly: HTTP, FTP, DNS, SMTP (simple mail transfer protocol), SSH, Telnet (zprávy).
 \end{enumerate}
-\emph{TCP/IP} model má jen 4 vrstvy. Rodina protokolů pro komunikaci v počítačové síti, hlavním protokolem Internetu. (požívá jiné rozdělení vrtev než OSI ale do závorek dám, jaké se běžně používají za odpovídající.) V angličtině tomu odpovídá \emph{internet protocol suite} což je i pojmový/ abstraktní model.
+\emph{TCP/IP} model má jen 4 vrstvy. Rodina protokolů pro komunikaci v~počítačové síti, hlavním protokolem Internetu. (požívá jiné rozdělení vrtev než OSI ale do závorek dám, jaké se běžně používají za odpovídající.) V~angličtině tomu odpovídá \emph{internet protocol suite} což je i pojmový/ abstraktní model.
 \begin{enumerate}
 \item \emph{Aplikační vrstva} (OSI: aplikační, prezentační, většina relační) - komunikace aplikací na vzdálených (i stejných) zařízeních. SMTP, FTP, SSH, HTTP
-\item \emph{Transportní} (OSI: relační a transportní) - řeší přenos dat v rámci sítě nebo mezi sítěmi. TCP, UDP
+\item \emph{Transportní} (OSI: relační a transportní) - řeší přenos dat v~rámci sítě nebo mezi sítěmi. TCP, UDP
 \item \emph{Síťová} = \emph{internet layer} (OSI: část síťové) - řeší propojení sítí do internetu. IP Protokoly
-\item \emph{Linková} cca= vrstva síťového rozhraní (network interface), (OSI: linková, ale může i fyzická a část síťové) - řeší přenos datagramů v rámci jednoduché sítě bez routerů.
+\item \emph{Linková} cca= vrstva síťového rozhraní (network interface), (OSI: linková, ale může i fyzická a část síťové) - řeší přenos datagramů v~rámci jednoduché sítě bez routerů.
 \end{enumerate}
-\item \emph{Mac (media access control) adresa} = \emph{fyzická adresa}. Je jednoznačný identifikátor síťového zařízení, který je mu přiřazen hned pro výrobě. U moderních karet ale již jde měnit. Šestice dvojciferných hexadecimálních čísel oddělených pomlčkami/dvojtečkami.\\
-\emph{IP} (?Internet protokol?) jednoznačně určuje zařízení v síti IPv4 256.256.256.256 a IPv6 128bitů hexadecimálně
-\item \emph{DHCP (Dynamic Host Configuration Protocol)} je protokol z rodiny TCP/IP. Používá se pro automatickou konfiguraci počítačů připojených do sítě. Nastavuje IP adresu, masku sítě,  default gateway (implicitní bránu), DNS server \dots \\
-\emph{DNS ( Domain Name System)} je hierarchický a decentralizovaný systém pojmenovávání zařízení připojených do internetu. Za dob ARPANETu  to byl textový soubor HOSTS.TXT . Teď to řeší DNS servery : chci se připojit k wikipedia.org - jdu vždy o úroveň výš (topologie stromu) a pokud tam někdo ví, kam mě přesměrovat, až mě někdo odkáže na IP ,kam chci. \emph{TLD (Top level domain} .cz, .sk, .eu, .com, .edu, .gov  \dots\\
-\emph{DNS severy} jsou autoritativní (poskytovány webhostingem/ registrátorem domény), rekurzivní (server získává záznam rekurzivně z autoritativní, cache paměť pro rychlejší odpovědi) a root = kořenové (je jich 13 a jsou základním částí technické infrastruktury internetu)
-\item \emph{Hub} (rozbočovač) spojuje několik segmentů sítě (hvězdicová topologie), takovým způsobem, že veškerá data, která přijdou na jeden z portů kopíruje do všech ostatních portů, bez ohledu na to, kterému portu data náleží\\
+\item \emph{Mac (media access control) adresa} = \emph{fyzická adresa}. Je jednoznačný identifikátor síťového zařízení, který je mu přiřazen hned pro výrobě. U~moderních karet ale již jde měnit. Šestice dvojciferných hexadecimálních čísel oddělených pomlčkami/dvojtečkami.\\
+\emph{IP} (?Internet protokol?) jednoznačně určuje zařízení v~síti IPv4 256.256.256.256 a IPv6 128bitů hexadecimálně
+\item \emph{DHCP (Dynamic Host Configuration Protocol)} je protokol z~rodiny TCP/IP. Používá se pro automatickou konfiguraci počítačů připojených do sítě. Nastavuje IP adresu, masku sítě,  default gateway (implicitní bránu), DNS server \dots \\
+\emph{DNS ( Domain Name System)} je hierarchický a decentralizovaný systém pojmenovávání zařízení připojených do internetu. Za dob ARPANETu  to byl textový soubor HOSTS.TXT . Teď to řeší DNS servery : chci se připojit k~wikipedia.org - jdu vždy o~úroveň výš (topologie stromu) a pokud tam někdo ví, kam mě přesměrovat, až mě někdo odkáže na IP ,kam chci. \emph{TLD (Top level domain} .cz, .sk, .eu, .com, .edu, .gov  \dots\\
+\emph{DNS severy} jsou autoritativní (poskytovány webhostingem/ registrátorem domény), rekurzivní (server získává záznam rekurzivně z~autoritativní, cache paměť pro rychlejší odpovědi) a root = kořenové (je jich 13 a jsou základním částí technické infrastruktury internetu)
+\item \emph{Hub} (rozbočovač) spojuje několik segmentů sítě (hvězdicová topologie), takovým způsobem, že veškerá data, která přijdou na jeden z~portů kopíruje do všech ostatních portů, bez ohledu na to, kterému portu data náleží\\
 \emph{Switch} (přepínač) na rozdíl od hubu rozlišuje, komu má která data posílat.\\
 \emph{Router} (směrovač) rozděluje svět na vnější a vnitřní síť (pomocí IP protokolů) (?třetí vrstva modelu ISO/OSI?)\\
-\emph{Gateway} (brána) spojuje 2 sítě s odlišnými komunikačními protokoly, vykonává i funkci routeru (proto ji řadíme nad směrovač)
+\emph{Gateway} (brána) spojuje 2 sítě s~odlišnými komunikačními protokoly, vykonává i funkci routeru (proto ji řadíme nad směrovač)
 \item cmd a do otevřeného okna napsat \emph{ipconfig /all}. Vypíší se detaily všech síťových adaptérů.\\
-\emph{ping} (Packet InterNet Grope) - ověřuje funkčnost spojení s jiným síťovým zařízením. Posílá packet a vypisuje za jak dlouho se vrátí
+\emph{ping} (Packet InterNet Grope) - ověřuje funkčnost spojení s~jiným síťovým zařízením. Posílá packet a vypisuje za jak dlouho se vrátí
 \item heslo není to slovo nebo jednoduché heslo. kombinace číslic, písmen a jiných znaků. Pokaždé jiné, ale limit lidská paměť.
-\item \emph{Antivir} - prohlíží soubory na disku a hledá sekvence odpovídající nějaké definice viru z databáze nebo monitoruje aktivity programu na podezřelé chování.\\
-\emph{Anti-spyaware} vyhledávají a odstraňují (nebo blokují) spyware (typ malware s cílem získat informace o osobě či organizaci bez jejich vědomí).\\
-\item \emph{Firewall} síťové zařízení k zabezpečení ( a řízení) komunikace mezi sítěmi s různou úrovní důvěryhodnosti.
+\item \emph{Antivir} - prohlíží soubory na disku a hledá sekvence odpovídající nějaké definice viru z~databáze nebo monitoruje aktivity programu na podezřelé chování.\\
+\emph{Anti-spyaware} vyhledávají a odstraňují (nebo blokují) spyware (typ malware s~cílem získat informace o~osobě či organizaci bez jejich vědomí).\\
+\item \emph{Firewall} síťové zařízení k~zabezpečení ( a řízení) komunikace mezi sítěmi s~různou úrovní důvěryhodnosti.
 \end{enumerate}	
 \subsection{Meta}
 \subsubsection{Zdroje}
@@ -424,21 +453,21 @@ Počítačové sítě – druhy sítí (podle velikosti a topologie), model ISO-
 \subsection{historie}
 \begin{itemize}
 \item Agentura DARPA (Defense Advanced Research Projects Agency) - vývoj komunikační infrastruktury bez řídících uzlů
-\item ARPANET - všechny jména v souboru hosts.txt (synchronizován přes FTP) -> vznik DNS (domain name system) ->státní a jiné TLD domény .cz \dots 
+\item ARPANET - všechny jména v~souboru hosts.txt (synchronizován přes FTP) -> vznik DNS (domain name system) ->státní a jiné TLD domény .cz \dots 
 \item decentralizované - nemá snadno zničitelné centrum (vznik za Studené války)
 \item Vytvoření základních protokolů komunikace TCP/IP
-\item přenos dat po \emph{paketech} - obsahují data a informace o odesilateli příjemci, detekce chyb pomocí kontrolního součtu \dots \\
-\emph{Datagram} - paket služby nespolehlivého přesnou dat (odesílatel nedostane zprávu o chybě atd.)
-\item WWW vznikl v Cernu - jazyk HTML a protokol HTTP\\
-návrh s názvem "WorldWideWeb" (jedno slovo) jako síť hypertextových dokumentů, která by mohla být prohlížena "prohlížeči" v podobě architektury typu klient-server.
+\item přenos dat po \emph{paketech} - obsahují data a informace o~odesilateli příjemci, detekce chyb pomocí kontrolního součtu \dots \\
+\emph{Datagram} - paket služby nespolehlivého přesnou dat (odesílatel nedostane zprávu o~chybě atd.)
+\item WWW vznikl v~Cernu - jazyk HTML a protokol HTTP\\
+návrh s~názvem "WorldWideWeb" (jedno slovo) jako síť hypertextových dokumentů, která by mohla být prohlížena "prohlížeči" v~podobě architektury typu klient-server.
 \end{itemize}
 \subsection{Služby internetu}
 \begin{enumerate}
 \item WWW a Internet viz \ref{sec:internet_technologie}
 \item e-mail, www, ftp, dns, ssh, instant messaging, VoIP (Voice over Internet protocol), sociální sítě: \dots
-\item práce s prohlížečem, URL (\emph{Unifrom resource locator} = webová adresa
+\item práce s~prohlížečem, URL (\emph{Unifrom resource locator} = webová adresa
 \item katalogy (dnes nepoužívané) a vyhledávače  (Bing, sezna, duckduckgo \dots) hlavně google:
-hledání "přesně této kombinace slov v tomto pořadí pomocí uvozovek"\\
+hledání "přesně této kombinace slov v~tomto pořadí pomocí uvozovek"\\
 site:reddit.com \qquad -nechci (exkluze tohoto pojmu) \qquad filetype:pdf\\
 hledání * vynechaného slova\\
 kalkulačka, převod měn (jednotek), počasí, define:pojem\\
@@ -447,12 +476,12 @@ Easter egg: askew, do a barrel roll
 \subsection{Autorská práva}
 a  GDPR (genral data protection regulation)
 \begin{enumerate}
-\item vlastník autorských práv rozhoduje o užívání díla
+\item vlastník autorských práv rozhoduje o~užívání díla
 \item Druhy licencí:
-Teď se mi zalíbila jedna definice z wiki:\\
+Teď se mi zalíbila jedna definice z~wiki:\\
 BSD někdy bývá označována slovní hříčkou copycenter – zatímco copyright omezuje šíření díla, copyleft omezuje omezování šíření díla, tak BSD licence říká „Vezměte si to do copycentra a vyrobte si kopie dle libosti.“
 \begin{itemize}
-\item Public domain - dává všem všechna práva, ?př: BSD (\emph{Berkeley Software Distribution}) - kód i program  je poskytován "jak stojí a leží", musí obsahovat tuto informaci o copyrightu (a dřív měl i bod pro nutnost obsahovat autory) a licence MIT (Massachusetts Institute of Technology) obdobná, WTFPL (Do What The Fuck You Want To Public License)
+\item Public domain - dává všem všechna práva, ?př: BSD (\emph{Berkeley Software Distribution}) - kód i program  je poskytován "jak stojí a leží", musí obsahovat tuto informaci o~copyrightu (a dřív měl i bod pro nutnost obsahovat autory) a licence MIT (Massachusetts Institute of Technology) obdobná, WTFPL (Do What The Fuck You Want To Public License)
 \item Permissive license - dává práva na použití, včetně relicencování 
 \item Copyleft - dává práva používat, kopírovat upravovat\dots, ale při vytvoření odvozeniny musí být využito stejné licence. GPL  (general public licence) a další od GNU fundation. Free software fundation
 \item Noncommercial licence - práva na nekomerční využití
@@ -464,13 +493,13 @@ BSD někdy bývá označována slovní hříčkou copycenter – zatímco copyri
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Internet – princip činnosti, TCP/IP, služby a historie internetu, práce s www prohlížečem, vyhledávání informací na internetu (katalogy a vyhledávače). Ochrana autorských práv a osobních údajů. 
+Internet – princip činnosti, TCP/IP, služby a historie internetu, práce s~www prohlížečem, vyhledávání informací na internetu (katalogy a vyhledávače). Ochrana autorských práv a osobních údajů. 
 
 \section{Internetové technologie}
 \begin{enumerate}
 \item Nápad, vytvoření stránky, zakoupení domény a hostování a nahrání tam souborů
 \item domena.cz
-\item \emph{Registrátor} je subjekt, oprávněný přistupovat definovaným způsobem k Centrálnímu registru a zadávat do něj požadavky změn záznamů, vedených v Centrálním registru. Registrátor touto cestou provádí správu domén pro koncové uživatele.
+\item \emph{Registrátor} je subjekt, oprávněný přistupovat definovaným způsobem k~Centrálnímu registru a zadávat do něj požadavky změn záznamů, vedených v~Centrálním registru. Registrátor touto cestou provádí správu domén pro koncové uživatele.
 \item fropsi.cz, wedos.cz, seznam.cz, 
 \end{enumerate}
 \begin{itemize}
@@ -490,35 +519,35 @@ Internet – princip činnosti, TCP/IP, služby a historie internetu, práce s w
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Internetové technologie – pojmy Internet, WWW, doména, webhosting, cloud. Zápis kódu webových stránek, HTML (struktura, základní značky), CSS (využití při tvorbě webových stránek, nástroje v prohlížečích). Jazyky interpretované na straně prohlížeče, jazyky interpretované na straně serveru
+Internetové technologie – pojmy Internet, WWW, doména, webhosting, cloud. Zápis kódu webových stránek, HTML (struktura, základní značky), CSS (využití při tvorbě webových stránek, nástroje v~prohlížečích). Jazyky interpretované na straně prohlížeče, jazyky interpretované na straně serveru
 
 \section{Databázové systémy}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Databázové systémy – základní pojmy (databáze, pole, záznam), založení nové databáze, datové typy, základy SQL – práce s tabulkou, vyhledávání a řazení dat, dotazy, návaznost na programovací jazyky.
+Databázové systémy – základní pojmy (databáze, pole, záznam), založení nové databáze, datové typy, základy SQL – práce s~tabulkou, vyhledávání a řazení dat, dotazy, návaznost na programovací jazyky.
 
 \section{Multimedia (digitální zvuk, fotografie a video)}
-\subsection{poznámky z OV}
-Neoblíbená otázka u učitelů, široká otázka
+\subsection{poznámky z~OV}
+Neoblíbená otázka u~učitelů, široká otázka
 \begin{itemize}
 \item obrázky, audio, video, 3D grafika
-\item Pořízení obrazu/videa/zvuku v digitální formě - Fotoaparát, kamera, telefon\\
-ne mikrofon - převádí zvuk na elektřinu, ne do digitální podoby; na to je diktafon, audiorekordér (obecný název), A/D převodník (Analog/digital hardware) to všechno už je spojený např. v mobilu.
+\item Pořízení obrazu/videa/zvuku v~digitální formě - Fotoaparát, kamera, telefon\\
+ne mikrofon - převádí zvuk na elektřinu, ne do digitální podoby; na to je diktafon, audiorekordér (obecný název), A/D převodník (Analog/digital hardware) to všechno už je spojený např. v~mobilu.
 \item Zvukové vjemy přes vzduch = mechanické chvění - přes membránu na elektrický signál (pomocí cívky a magnetu)\\
-Signál je úroveň napětí = analogový -> digitální - rozdělení do úrovní -> přicházíme o informaci\\
+Signál je úroveň napětí = analogový -> digitální - rozdělení do úrovní -> přicházíme o~informaci\\
 -> chceme rozdělit maximální napětí na co nejvíce úrovní\\
 \emph{ADC} - Analog digital converter, analogově číslicový převodník\\
 lidské ucho slyší frekvence 20 Hz až 20k Hz \\
 \emph{Navzorkování /sampling} - rozdělení času na části, frekvenci vzorkování se říká \emph{sample rate}, čím vyšší frekvence tím věrnější původnímu zvuku\\
-u CD 16-32bitový převodník, v časové ose většinou dvojnásobnou minimální změny -> 44100 Hz
-\item Záznam obraz - CCD chip (Charge coupled device) - nábojově vázané prvky.  Tam kam dopadne světlo vznikne náboj - to se potom sečte -> víme jaký náboj byl v jakém místě. Křemíková destička je citlivá na světlo v širokém spektru (zejména v infračervené části) - musíme upravit -> \emph{napaří} se na ní tenká vrstva propouštějící jen frekvence odpovídající jen část spektra viditelnou lidskému oku -> černobílý obrázek. Pro barevný obrázek se napaří \emph{Bayerovská maska} - rozdělení na čtverečky propouštějící jen jednu barvu (RGB). Tím se zaznamená pro dané okolí daného místa úroveň v těch třech barvách. Lidské oko není citlivé na všechny barvy stejně. - > Různé typy Bayerovy masky 50\% zelená vs červená a modrá po 25\%. Bod se řeší jako průměr okolních čtyřech pixelů.\\
-nebo technologie CMOS - zaznamenává v ``jednom bodě'' nad sebou
+u~CD 16-32bitový převodník, v~časové ose většinou dvojnásobnou minimální změny -> 44100 Hz
+\item Záznam obraz - CCD chip (Charge coupled device) - nábojově vázané prvky.  Tam kam dopadne světlo vznikne náboj - to se potom sečte -> víme jaký náboj byl v~jakém místě. Křemíková destička je citlivá na světlo v~širokém spektru (zejména v~infračervené části) - musíme upravit -> \emph{napaří} se na ní tenká vrstva propouštějící jen frekvence odpovídající jen část spektra viditelnou lidskému oku -> černobílý obrázek. Pro barevný obrázek se napaří \emph{Bayerovská maska} - rozdělení na čtverečky propouštějící jen jednu barvu (RGB). Tím se zaznamená pro dané okolí daného místa úroveň v~těch třech barvách. Lidské oko není citlivé na všechny barvy stejně. - > Různé typy Bayerovy masky 50\% zelená vs červená a modrá po 25\%. Bod se řeší jako průměr okolních čtyřech pixelů.\\
+nebo technologie CMOS - zaznamenává v~``jednom bodě'' nad sebou
 \item Kam uložit zaznamenaná média (jsou digitální, takže kamkoliv, co umí uložit)- SD karta, Flashka, Harddisk, SSD, CD (Compact disc), DVD(Digital Versatile Disc/ Digital Video Disc)\\
 historicky - kazetová páska (analog, nebo digital) a vinylová deska (přímo analogový záznam beze ztráty informace -> audiofilové)
 \item Zrcadlovky - výhoda výměnné objektivy, zrcadlo odráží světlo do okuláru (fotograf vidí přímo, to co vyfotí) a při zmáčknutí spouště se zrcadlo sklopí a pustí to světlo na senzor.
 \item Datové formáty:\\
- - obraz: bmp (bitové pole čísel, a informace o velikosti obrázku), jpg, png, gif, raw, svg\\
+ - obraz: bmp (bitové pole čísel, a informace o~velikosti obrázku), jpg, png, gif, raw, svg\\
   -	jpg, png, gif - menší velikost díky \emph{kompresi} - ztrátové a bez-ztrátové kompresní algoritmy\\
  - zvuk: mp3, wav (surový), au(nejsurovější = výstup A/D převodníku),  ogg (kompresí nedochází ke ztrátě informace)\\
  - free software: Audacity\\
@@ -537,7 +566,7 @@ Multimedia (digitální zvuk, fotografie a video) – základy pořizování mul
 \subsection{prezentační software}
 \begin{enumerate}
 \item Jako obrazový podklad výkladu, přednášce \dots PowerPoint je dobrý na všechno
-\item (třída beamer v \LaTeX u), LibreOffice (/ Open Office) Impress, PowMoot, Google Slides MS PowerPoint, Prezi, Keynote (jablíčka)
+\item (třída beamer v~\LaTeX u), LibreOffice (/ Open Office) Impress, PowMoot, Google Slides MS PowerPoint, Prezi, Keynote (jablíčka)
 \end{enumerate}
 \subsection{Praktická část}
 \begin{itemize}
@@ -551,7 +580,7 @@ Multimedia (digitální zvuk, fotografie a video) – základy pořizování mul
 \item Pro koho je prezentace určena? Odbornost, serióznost? 
 \item Úvod do problému/tématu, (představení mluvčího), procházení jednotlivých problematik/ podsoučástí, Závěr (shrnutí, hodnocení \dots )
 \item Dobrou mluvou, stylovými animacemi, volbou výrazných barev
-\item Nevědět co je v prezentaci, přílišně náročné formulace (které se těžko chápou jen z výkladu bez času na přemýšlení), vyvarovat se nespisovného jazyka, neodbíhat od hlavní myšlenky, nečíst to z plátna (ale z patra/ hlavy), vypnout si mobil atd.\\
+\item Nevědět co je v~prezentaci, přílišně náročné formulace (které se těžko chápou jen z~výkladu bez času na přemýšlení), vyvarovat se nespisovného jazyka, neodbíhat od hlavní myšlenky, nečíst to z~plátna (ale z~patra/ hlavy), vypnout si mobil atd.\\
 Co dělat: zapojit publikum (podle akce), efekty střídmě (podle typu prezentace)
 \end{enumerate}
 \subsection{Meta}
@@ -559,51 +588,51 @@ Co dělat: zapojit publikum (podle akce), efekty střídmě (podle typu prezenta
 \subsubsection{Pojmy}
 Prezentační software – popis pracovního prostředí programu MS-Powerpoint, tvorba snímků, animace, šablony, přechody snímků, nastavení akcí. Základy mluveného projevu při prezentování.
 
-\section{Moderní trendy v IT. Používání moderních systémů komunikace.}
-\subsection{Poznámky z OV}
+\section{Moderní trendy v~IT. Používání moderních systémů komunikace.}
+\subsection{Poznámky z~OV}
 \begin{itemize}
 \item Cloud computing, virtualizace se tam mlže taky mihnout. Hlavně se věnovat tomu, co tam je napsané.
-\item obrázek mobilní sítě, \emph{BTS} Base transceiver station - vysílače sítě, rozdělení prostoru na šestiúhelníky. s mobilním zařízením procházíme ze signálu jedné do signálu druhé s minimálním překryvem.\\
+\item obrázek mobilní sítě, \emph{BTS} Base transceiver station - vysílače sítě, rozdělení prostoru na šestiúhelníky. s~mobilním zařízením procházíme ze signálu jedné do signálu druhé s~minimálním překryvem.\\
 \emph{BSC} - base station controller - ovladač těch základových stanic, řídí předávání\\
-\emph{SIM} subscriber ID (identification) module - hardware zařízení, které má v sobě vypáleno identifikační číslo, dřív se používalo ještě speciální číslo identifikující mobilní zařízení nzývané \emph{IMEI}, teď jen na rozpoznání (komunikaci s vysílači) sítě ne na využívání jejích služeb\\
+\emph{SIM} subscriber ID (identification) module - hardware zařízení, které má v~sobě vypáleno identifikační číslo, dřív se používalo ještě speciální číslo identifikující mobilní zařízení nzývané \emph{IMEI}, teď jen na rozpoznání (komunikaci s~vysílači) sítě ne na využívání jejích služeb\\
 \emph{HLR}Home location register - registr uživatelů operátora (mají údaje kdo, kdy kde se připojí - díky triangulační metodě, díky známé lokaci)\\
 \emph{Okruhově orientovaná doména} vs \emph{Paketově orientovaná doména} (na hlasové zprávy) - ?jedno na hlas druhé na zprávy?\\
 \emph{VLR} - visitor locator register - sdílená databáze uživatelů, pokud se připojíte do sítě jiného operátora, roaming - záleží na dohodě operátorů
 \item služby sítě: hlasové volání, SMS, internet, lokalizace -> přesný čas\\
-SMS (short message service) je služba datová - krůček k tomu přenášet více dat (internet) -> ale přešlo se k lepším protokolům\\
-hlášení pro všechny lidi v dané lokaci - povodně, zemětřesení, rakety (Izrael)\\
-reklamy - pomocí krátkých zpráv - u nás se nepoužívá\\
+SMS (short message service) je služba datová - krůček k~tomu přenášet více dat (internet) -> ale přešlo se k~lepším protokolům\\
+hlášení pro všechny lidi v~dané lokaci - povodně, zemětřesení, rakety (Izrael)\\
+reklamy - pomocí krátkých zpráv - u~nás se nepoužívá\\
 \emph{VOIP} - Voice over IP - přenášení hlasu přes datové sítě, datové sítě jsou rychlé -> někteří operátoři přenášení hlasových přes internetový protokol\\
 \item 2.generace - GSM, GPRS, EDGE - pomalé (0.1 Mbps) (standarní lokální síť 100Mbps)\\☺
 3. generace: 3G, HSPA, HSPA+ - rychlost jednotky Mbps\\
-4. generace: LTE/ LTE+ - řádově 10 Mbps - to už může srovnávat s domácím připojením -> wifi v buse atd...\\
+4. generace: LTE/ LTE+ - řádově 10 Mbps - to už může srovnávat s~domácím připojením -> wifi v~buse atd...\\
 5. generace: 5G - nyní zaváděna ???1Gbps\\
-\item \emph{Internet of things} = internet věcí, mluvíme o malých zařízení, které jsou vzájemně propojeny přes internet. Nasazení trendu - Arduino Genuino - ATMEL začal vyrábět velmi levné počítačové čipy (s výbornou dokumentací) - skupina italských ?designerů/elektrotechniků? vytvořila Arduino - to mělo programovatelný čip\\
-firma Espressive - zařízení ESP má připojení k wifi\\
+\item \emph{Internet of things} = internet věcí, mluvíme o~malých zařízení, které jsou vzájemně propojeny přes internet. Nasazení trendu - Arduino Genuino - ATMEL začal vyrábět velmi levné počítačové čipy (s~výbornou dokumentací) - skupina italských ?designerů/elektrotechniků? vytvořila Arduino - to mělo programovatelný čip\\
+firma Espressive - zařízení ESP má připojení k~wifi\\
 Sítě LoRa a sigfox - ale jsou licencované\\
 zařízení BBC micoro:bit ; dále raspberry pi;
 \item Metody komunikace, které nahradili dopisy a pohlednice. E-mail, datová schránka (je jako mail, ale ověřená identita odesilatele a doručovatele), messenger, skype, discord, sociální sítě: Myspace, fb, instagram, snapchat, whatsup, YT, TikTok, twitter, 4square (geolokační komunikační síť), ICQ, Tinder \dots \\
 Pro firmy - reklamy, marketing (i nekomerční subjekty: strany \dots)
 \item \emph{Cloud} a cloud computing - někdo zapůjčuje své úložiště nebo výpočetní sílu - otázka bezpečnost.  cloudové služby - př. google docs\\
 \item Autorské právo na internetu - ulož.to, netflix a youtube
-\item Etické chování viz film V síti(2020)
+\item Etické chování viz film V~síti(2020)
 \item Jak si chránit své osobní údaje?
 \end{itemize}
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Moderní trendy v IT. Používání moderních systémů komunikace. – Mobilní technologie (GSM, mobilní sítě, mobilní zařízení), virtualizace, VoIP, Cloud Computing, IoT (Internet of Things). E-mail, sociální sítě a etiketa jejich používání; etika zacházení s osobními informacemi. 
+Moderní trendy v~IT. Používání moderních systémů komunikace. – Mobilní technologie (GSM, mobilní sítě, mobilní zařízení), virtualizace, VoIP, Cloud Computing, IoT (Internet of Things). E-mail, sociální sítě a etiketa jejich používání; etika zacházení s~osobními informacemi. 
 
 \section{Bitmapový grafický editor}
 \subsection{Otázky}
 \subsubsection{Bitmapový grafický editor}
 \begin{enumerate}
-\item Program slouží k úpravě obrázků. Taktéž se nazývá rastrový editor.
-\item Rastrová grafika určuje obrázek pomocí bodů (= pixelů) v mřížce, u kterých je určeno jakou mají barvu. Oproti \emph{vektorové grafice}, kde jsou obrázky určeny matematicky  popsanými křivkami.\\
+\item Program slouží k~úpravě obrázků. Taktéž se nazývá rastrový editor.
+\item Rastrová grafika určuje obrázek pomocí bodů (= pixelů) v~mřížce, u~kterých je určeno jakou mají barvu. Oproti \emph{vektorové grafice}, kde jsou obrázky určeny matematicky  popsanými křivkami.\\
 Výhody: snadné, dobré pro úpravu fotek\\
 Nevýhody: Horší zachování kvality při změně velikosti, může být náročnější na paměťové zdroje
 \item Zástupci: malování, GIMP, Krita, placený Photoshop\\
-(V dnešní době programy na úpravu obrázků často umožňují i některé funkce vektorových/bitmapových editorů ikdyž sami jsou opakem)\\
+(V~dnešní době programy na úpravu obrázků často umožňují i některé funkce vektorových/bitmapových editorů ikdyž sami jsou opakem)\\
 formáty: PNG, JPEG, GIF,
 \end{enumerate}
 \subsubsection{Filtry a úprava}
@@ -612,33 +641,33 @@ CMYK (Cyan, Magenta, Yellow, blacK) - kombinuje barvy (pohlcující světlo) - v
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Bitmapový grafický editor –vrstvy a operace s vrstvami, klonovací razítko, filtry a práce s filtry, úprava fotografií (úrovně, jas, kontrast, barevné režimy, barevné modely), práce s textem
+Bitmapový grafický editor –vrstvy a operace s~vrstvami, klonovací razítko, filtry a práce s~filtry, úprava fotografií (úrovně, jas, kontrast, barevné režimy, barevné modely), práce s~textem
 
 \section{Vektorový grafický editor}
 \begin{enumerate}
-\item Vektorový grafický editor slouží k úpravě/vytváření obrázků. Narozdíl od bitmapového jsou objekty určeny jako matematicky popsané křivky -> dobré zvětšení zmenšení
+\item Vektorový grafický editor slouží k~úpravě/vytváření obrázků. Narozdíl od bitmapového jsou objekty určeny jako matematicky popsané křivky -> dobré zvětšení zmenšení
 \item Inkscape, Adobe Illustrator,  CorelDraw; specializované vektorové editory pro technické kreslení = CAD ( =computer aided design): Blender, Maya\\
 Formáty: SVG, PDF!!!, EPS, 
 \end{enumerate}
 \subsection{Praktická část}
-Umístění textu na křivku. Označit text a kruh/obdélník. A vybrat z horního menu Text-> Umístit na křivku (text-> vlít do text do rámce)\\
-K odstranění křivky podle které se to točí: vybrat text z horního menu-křivka-objekt na křivku a potom smazat kruh. Takhle tam ten text zůstane i bez křivky, kolem které se točí.\\
+Umístění textu na křivku. Označit text a kruh/obdélník. A~vybrat z~horního menu Text-> Umístit na křivku (text-> vlít do text do rámce)\\
+K~odstranění křivky podle které se to točí: vybrat text z~horního menu-křivka-objekt na křivku a potom smazat kruh. Takhle tam ten text zůstane i bez křivky, kolem které se točí.\\
 (velikost stránky, pozadí, jednotky) v:horní menu - soubor - vlastnosti dokumentu\\
 zbytek ez \dots
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Vektorový grafický editor – Prostředí programu, nastavení kreslící plochy, práce s textem, úpravy objektů, vrstvy
+Vektorový grafický editor – Prostředí programu, nastavení kreslící plochy, práce s~textem, úpravy objektů, vrstvy
 
 \section{Textový procesor 1}
-\subsection{poznámky z OV}
+\subsection{poznámky z~OV}
 procesor vs editor:
 \begin{itemize}
 \item \emph{editor} - poznámkový blok, notepad nebo třeba VisualStudio, python
 \item \emph{procesor} - umožňuje měnit i velikost, styl písma
 \item \emph{textové soubory} - obsahují data pouze textové tabulky (ASCII, UTF-8), pouze znaky textu (a zakončení řádku,..) -> textové editory\\
 .txt, .py, .html
-\item soubory .doc, .docx nejsou textové soubory! má i informace o formátování. Dnes nějaké zazipované XML
+\item soubory .doc, .docx nejsou textové soubory! má i informace o~formátování. Dnes nějaké zazipované XML
 \end{itemize}
 
 \subsection{Meta}
@@ -648,16 +677,16 @@ wiki jak sviňa
 Textový procesor 1 – prostředí programu, ukládání a otevírání souborů, vlastnosti písma, odstavce, odrážek a číslování, stylů, využití motivů, barvy pozadí, psaní do sloupců
 
 \section{Textový procesor 2}
-\subsection{poznámky z OV}
+\subsection{poznámky z~OV}
 \begin{itemize}
 \item ... Word/ google docs
-\item body - velikost vyjádřena v typografických bodech (něco s palci z anglosaského světa) - základní velikost je 12 
+\item body - velikost vyjádřena v~typografických bodech (něco s~palci z~anglosaského světa) - základní velikost je 12 
 \end{itemize}
 
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
-Textový procesor 2 – funkce kontrola pravopisu, záhlaví a zápatí, nástroje pro sledování změn v dokumentu (revize, komentáře), editor rovnic, vkládání obrázků, klipartů, organizačních diagramů, poznámky pod čarou, tabelátorové zarážky a jejich využití, tabulky a kreslení, hromadná korespondence, záznam a využití makra, Wordart
+Textový procesor 2 – funkce kontrola pravopisu, záhlaví a zápatí, nástroje pro sledování změn v~dokumentu (revize, komentáře), editor rovnic, vkládání obrázků, klipartů, organizačních diagramů, poznámky pod čarou, tabelátorové zarážky a jejich využití, tabulky a kreslení, hromadná korespondence, záznam a využití makra, Wordart
 
 \section{Tabulkové kalkulátory 1}
 \subsection{Meta}
@@ -667,10 +696,10 @@ Tabulkové kalkulátory 1 – prostředí programu, výběr buněk, formát buň
 
 \section{Tabulkové kalkulátory 2}
 \subsection{Meta}
-Google sheets si moc neporadí s vytvářením grafu z řádků. A neumí zamknout na heslo, ale dělají to přes práva uživatelů.
+Google sheets si moc neporadí s~vytvářením grafu z~řádků. A~neumí zamknout na heslo, ale dělají to přes práva uživatelů.
 \subsubsection{Zdroje}
 \subsubsection{Pojmy}
 Tabulkové kalkulátory 2 – tvorba grafů, filtry a řazení dat, funkce data a času, zamknutí listu, funkce najít a nahradit
-
+\newpage
 \tableofcontents
 \end{document}
