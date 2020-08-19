@@ -1,0 +1,8 @@
+*.aux
+*.log
+*.out
+*.gz
+*.bbl
+*.blg
+*.toc
+vlna32.exe
